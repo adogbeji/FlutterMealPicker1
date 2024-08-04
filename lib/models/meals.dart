@@ -9,3 +9,10 @@ enum Affordability {
   pricey,
   luxurious
 }
+
+class Meal {
+
+  final String id;
+  final List<String> categories;
+  final String title;
+}
