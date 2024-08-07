@@ -10,7 +10,7 @@ class Meals extends StatefulWidget {
 }
 
 class _MealsState extends State<Meals> {
-  final List<Meal> _favouriteMeals = [];  // Stores favourite meals
+  // final List<Meal> _favouriteMeals = [];  // Stores favourite meals
 
   void _showSnackBar(String message) {
     ScaffoldMessenger.of(context).clearSnackBars();  // Removes any existing info messages ("snack bars")
