@@ -100,4 +100,16 @@ final dummyMeals = [
     isVegan: false, 
     isVegetarian: false,
   ),
+  Meal(
+    id: 'm5', 
+    categories: ['c2', 'c5', 'c10'], 
+    title: 'Salad with Smoked Salmon', 
+    duration: 15, 
+    complexity: Complexity.easy, 
+    affordability: Affordability.luxurious, 
+    isGlutenFree: true, 
+    isLactoseFree: false, 
+    isVegan: false, 
+    isVegetarian: true,
+  ),
 ];
