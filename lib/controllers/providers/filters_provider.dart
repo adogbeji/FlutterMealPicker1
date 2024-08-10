@@ -14,4 +14,8 @@ class FiltersNotifier extends StateNotifier<Map<Filter, bool>> {
     Filter.vegetarian: false,
     Filter.vegan: false,
   });
+
+  void setFilters(Map<Filter, bool> chosenFilters) {
+    state = chosenFilters;
+  }
 }
