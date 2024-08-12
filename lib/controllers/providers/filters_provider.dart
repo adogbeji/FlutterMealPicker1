@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:meal_picker_1/controllers/providers/meals_provider.dart';
 
 enum Filter {
   glutenFree,
@@ -28,3 +29,12 @@ class FiltersNotifier extends StateNotifier<Map<Filter, bool>> {
     };
   }
 }
+
+final filtersProvider = StateNotifierProvider<FiltersNotifier, Map<Filter, bool>>(
+  (ref) => FiltersNotifier()
+);
+
+final filteredMealsProvider = Provider((ref) {
+  final meals = ref.watch(mealsProvider);
+  final activeFilters = ref.watch(filtersProvider);
+});
